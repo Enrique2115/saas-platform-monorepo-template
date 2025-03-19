@@ -1,4 +1,4 @@
-name: "🔄 Sync labels"
+name: '🔄 Sync labels'
 
 on:
   push:
@@ -7,6 +7,9 @@ on:
 
 jobs:
   build:
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
