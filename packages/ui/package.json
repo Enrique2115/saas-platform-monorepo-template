@@ -9,26 +9,25 @@
   ],
   "exports": {
     "./styles.css": "./dist/index.css",
+    "./postcss.config": "./postcss.config.mjs",
     "./*": "./src/*.tsx"
   },
   "license": "MIT",
   "scripts": {
-    "build": "tailwindcss -i ./src/styles.css -o ./dist/index.css",
     "check-types": "tsc --noEmit",
-    "dev": "tailwindcss -i ./src/styles.css -o ./dist/index.css --watch",
     "lint": "eslint src --max-warnings 0"
   },
   "peerDependencies": {
     "react": "^19"
   },
   "devDependencies": {
-    "@repo/tailwind-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
+    "@tailwindcss/postcss": "^4.0.14",
     "@types/react": "^19.0.10",
     "autoprefixer": "^10.4.20",
     "eslint": "^9.22.0",
     "postcss": "^8.5.3",
-    "tailwindcss": "^3.4.17",
+    "tailwindcss": "^4.0.14",
     "typescript": "5.8.2"
   }
 }
