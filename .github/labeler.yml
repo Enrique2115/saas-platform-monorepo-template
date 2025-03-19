@@ -1,0 +1,59 @@
+💻 Source:
+  - changed-files:
+      - any-glob-to-any-file:
+          - packages/**
+          - apps/**
+
+🧪 Tests:
+  - changed-files:
+      - any-glob-to-any-file:
+          - apps/**/test/**
+          - .env.test
+
+📝 Documentation:
+  - changed-files:
+      - any-glob-to-any-file:
+          - docs/**
+          - README.md
+
+🐳 Build:
+  - changed-files:
+      - any-glob-to-any-file:
+          - .dockerignore
+          - Dockerfile
+          - docker-compose.yml
+          - .nvmrc
+          - turbo.json
+
+⚙️ Configuration:
+  - changed-files:
+      - any-glob-to-any-file:
+          - .dockerignore
+          - .editorconfig
+          - .gitignore
+          - .npmrc
+          - .nvmrc
+          - .linstagedrc
+          - .commitlintrc.json
+
+📦 Dependencies:
+  - changed-files:
+      - any-glob-to-any-file:
+          - package.json
+          - pnpm-lock.yaml
+
+🚀 CI/CD:
+  - changed-files:
+      - any-glob-to-any-file:
+          - .github/workflows/**
+          - .github/dependabot.yml
+          - .github/pr-scope-labeler.yml
+          - .husky/**
+
+🏠 Github Configuration:
+  - changed-files:
+      - any-glob-to-any-file:
+          - .github/ISSUE_TEMPLATE/**
+          - .github/CODEOWNERS
+          - .github/labels.yml
+          - .github/pull_request_template.md
