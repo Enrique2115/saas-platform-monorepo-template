@@ -1,5 +1,6 @@
-import { Card } from "@repo/ui/card";
+import { Card } from "@repo/ui/atoms/card";
 import Image from "next/image";
+import Link from "next/link";
 
 function Gradient({
   conic,
@@ -128,8 +129,8 @@ export default function Page() {
 
       <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
         {LINKS.map(({ title, href, description }) => (
-          <Card href={href} key={title} title={title}>
-            {description}
+          <Card key={title} title={title}>
+            <Link href={href}> {description} </Link>
           </Card>
         ))}
       </div>

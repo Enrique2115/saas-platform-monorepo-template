@@ -7,7 +7,8 @@
     "lint": "pnpm exec ultracite lint",
     "check-types": "turbo run check-types",
     "format": "pnpm exec ultracite format",
-    "prepare": "node .husky/install.mjs"
+    "prepare": "node .husky/install.mjs",
+    "bump-ui": "pnpm dlx shadcn@latest add --all --overwrite -c packages/ui"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
