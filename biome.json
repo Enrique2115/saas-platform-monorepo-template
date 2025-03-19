@@ -12,7 +12,8 @@
       "packages/ui/**",
       ".turbo/**",
       "apps/**/.turbo/**",
-      "apps/**/.next/**"
+      "apps/**/.next/**",
+      ".husky/**"
     ]
   },
   "formatter": {
