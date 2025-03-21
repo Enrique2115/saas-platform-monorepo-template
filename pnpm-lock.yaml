@@ -70,8 +70,8 @@ importers:
         specifier: ^8.5.3
         version: 8.5.3
       tailwindcss:
-        specifier: ^4.0.14
-        version: 4.0.14
+        specifier: ^4.0.15
+        version: 4.0.15
       typescript:
         specifier: 5.8.2
         version: 5.8.2
@@ -116,8 +116,8 @@ importers:
         specifier: ^8.5.3
         version: 8.5.3
       tailwindcss:
-        specifier: ^4.0.14
-        version: 4.0.14
+        specifier: ^4.0.15
+        version: 4.0.15
       typescript:
         specifier: 5.8.2
         version: 5.8.2
@@ -270,7 +270,7 @@ importers:
         version: 4.0.14
       '@tailwindcss/typography':
         specifier: ^0.5.16
-        version: 0.5.16(tailwindcss@4.0.14)
+        version: 0.5.16(tailwindcss@4.0.15)
       '@types/react':
         specifier: ^19.0.12
         version: 19.0.12
@@ -284,8 +284,8 @@ importers:
         specifier: ^8.5.3
         version: 8.5.3
       tailwindcss:
-        specifier: ^4.0.14
-        version: 4.0.14
+        specifier: ^4.0.15
+        version: 4.0.15
       typescript:
         specifier: 5.8.2
         version: 5.8.2
@@ -2313,7 +2313,7 @@ packages:
       tailwindcss: 4.0.14
     dev: true
 
-  /@tailwindcss/typography@0.5.16(tailwindcss@4.0.14):
+  /@tailwindcss/typography@0.5.16(tailwindcss@4.0.15):
     resolution: {integrity: sha512-0wDLwCVF5V3x3b1SGXPCDcdsbDHMBe+lkFzBRaHeLvNi+nrrnZ1lA18u+OTWO8iSWU2GxUOCvlXtDuqftc1oiA==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || insiders || >=4.0.0-alpha.20 || >=4.0.0-beta.1'
@@ -2322,7 +2322,7 @@ packages:
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       postcss-selector-parser: 6.0.10
-      tailwindcss: 4.0.14
+      tailwindcss: 4.0.15
     dev: true
 
   /@types/d3-array@3.2.1:
@@ -4021,6 +4021,10 @@ packages:
 
   /tailwindcss@4.0.14:
     resolution: {integrity: sha512-92YT2dpt671tFiHH/e1ok9D987N9fHD5VWoly1CdPD/Cd1HMglvZwP3nx2yTj2lbXDAHt8QssZkxTLCCTNL+xw==}
+    dev: true
+
+  /tailwindcss@4.0.15:
+    resolution: {integrity: sha512-6ZMg+hHdMJpjpeCCFasX7K+U615U9D+7k5/cDK/iRwl6GptF24+I/AbKgOnXhVKePzrEyIXutLv36n4cRsq3Sg==}
     dev: true
 
   /tapable@2.2.1:
