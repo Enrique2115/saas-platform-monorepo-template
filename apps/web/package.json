@@ -7,8 +7,8 @@
     "dev": "next dev --port 3000 --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint --max-warnings 0",
-    "check-types": "tsc --noEmit"
+    "clean": "git clean -xdf .cache .turbo dist node_modules",
+    "typecheck": "tsc --noEmit --emitDeclarationOnly false"
   },
   "dependencies": {
     "@repo/ui": "workspace:*",

@@ -4,12 +4,14 @@
   "exports": {
     "./styles.css": "./src/styles/globals.css",
     "./postcss.config": "./postcss.config.mjs",
-    "./lib/*": "./src/libs/*.ts",
-    "./atoms/*": "./src/components/ui/atoms/*.tsx"
+    "./lib/*": "./src/lib/*.ts",
+    "./atoms/*": "./src/components/ui/atoms/*.tsx",
+    "./lib/utils": "./src/lib/utils.ts"
   },
   "license": "MIT",
   "scripts": {
-    "check-types": "tsc --noEmit"
+    "clean": "git clean -xdf .cache .turbo dist node_modules",
+    "typecheck": "tsc --noEmit --emitDeclarationOnly false"
   },
   "peerDependencies": {
     "react": "^19"

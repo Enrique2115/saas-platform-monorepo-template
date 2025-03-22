@@ -4,9 +4,10 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
-    "lint": "pnpm exec ultracite lint",
-    "check-types": "turbo run check-types",
-    "format": "pnpm exec ultracite format",
+    "lint": "ultracite lint",
+    "format": "ultracite format",
+    "clean": "git clean -xdf node_modules",
+    "typecheck": "turbo run typecheck",
     "prepare": "node .husky/install.mjs",
     "bump-ui": "pnpm dlx shadcn@latest add --all --overwrite -c packages/ui"
   },
