@@ -4,12 +4,12 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
-    "lint": "pnpm exec ultracite lint",
+    "lint": "ultracite lint",
+    "format": "ultracite format",
+    "clean": "git clean -xdf node_modules",
     "typecheck": "turbo run typecheck",
-    "format": "pnpm exec ultracite format",
     "prepare": "node .husky/install.mjs",
-    "bump-ui": "pnpm dlx shadcn@latest add --all --overwrite -c packages/ui",
-    "clean": "git clean -xdf node_modules"
+    "bump-ui": "pnpm dlx shadcn@latest add --all --overwrite -c packages/ui"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
