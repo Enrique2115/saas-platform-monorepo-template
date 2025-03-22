@@ -5,7 +5,7 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "pnpm exec ultracite lint",
-    "check-types": "turbo run check-types",
+    "typecheck": "turbo run typecheck",
     "format": "pnpm exec ultracite format",
     "prepare": "node .husky/install.mjs",
     "bump-ui": "pnpm dlx shadcn@latest add --all --overwrite -c packages/ui"
