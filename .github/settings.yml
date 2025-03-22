@@ -1,5 +1,5 @@
 repository:
-  name: saas-platform-monorepo
+  name: saas-platform-monorepo-template
   description: A SaaS Platform Monorepo
   topics: saas, turborepo, nextjs, tailwindcss, boilerplate
   private: false
