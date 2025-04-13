@@ -9,7 +9,9 @@
   "files": {
     "ignoreUnknown": false,
     "ignore": [
-      "packages/ui/**",
+      "packages/ui/src/components/ui/atoms/**",
+      "packages/ui/src/lib/**",
+      "packages/ui/src/hooks/**",
       ".turbo/**",
       "apps/**/.turbo/**",
       "apps/**/.next/**",

@@ -11,6 +11,8 @@ updates:
       prefix-development: 'chore'
       include: 'scope'
     versioning-strategy: 'increase'
+    ignore:
+      - dependency-name: "react-day-picker"
   - package-ecosystem: 'github-actions'
     directory: '/'
     schedule:
