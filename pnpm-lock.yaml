@@ -13,7 +13,7 @@ importers:
         version: 1.9.4
       '@turbo/gen':
         specifier: ^2.5.1
-        version: 2.5.1(@types/node@22.14.1)(typescript@5.8.3)
+        version: 2.5.1(@types/node@22.15.0)(typescript@5.8.3)
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -249,8 +249,8 @@ importers:
         specifier: ^1.1.4
         version: 1.1.4(@types/react@19.0.12)(react-dom@19.1.0)(react@19.1.0)
       '@radix-ui/react-tabs':
-        specifier: ^1.1.8
-        version: 1.1.8(@types/react@19.0.12)(react-dom@19.1.0)(react@19.1.0)
+        specifier: ^1.1.9
+        version: 1.1.9(@types/react@19.0.12)(react-dom@19.1.0)(react@19.1.0)
       '@radix-ui/react-toggle':
         specifier: ^1.1.6
         version: 1.1.6(@types/react@19.0.12)(react-dom@19.1.0)(react@19.1.0)
@@ -1995,8 +1995,8 @@ packages:
       react-dom: 19.1.0(react@19.1.0)
     dev: false
 
-  /@radix-ui/react-tabs@1.1.8(@types/react@19.0.12)(react-dom@19.1.0)(react@19.1.0):
-    resolution: {integrity: sha512-4iUaN9SYtG+/E+hJ7jRks/Nv90f+uAsRHbLYA6BcA9EsR6GNWgsvtS4iwU2SP0tOZfDGAyqIT0yz7ckgohEIFA==}
+  /@radix-ui/react-tabs@1.1.9(@types/react@19.0.12)(react-dom@19.1.0)(react@19.1.0):
+    resolution: {integrity: sha512-KIjtwciYvquiW/wAFkELZCVnaNLBsYNhTNcvl+zfMAbMhRkcvNuCLXDDd22L0j7tagpzVh/QwbFpwAATg7ILPw==}
     peerDependencies:
       '@types/react': '*'
       '@types/react-dom': '*'
@@ -2012,7 +2012,7 @@ packages:
       '@radix-ui/react-context': 1.1.2(@types/react@19.0.12)(react@19.1.0)
       '@radix-ui/react-direction': 1.1.1(@types/react@19.0.12)(react@19.1.0)
       '@radix-ui/react-id': 1.1.1(@types/react@19.0.12)(react@19.1.0)
-      '@radix-ui/react-presence': 1.1.3(@types/react@19.0.12)(react-dom@19.1.0)(react@19.1.0)
+      '@radix-ui/react-presence': 1.1.4(@types/react@19.0.12)(react-dom@19.1.0)(react@19.1.0)
       '@radix-ui/react-primitive': 2.1.0(@types/react@19.0.12)(react-dom@19.1.0)(react@19.1.0)
       '@radix-ui/react-roving-focus': 1.1.7(@types/react@19.0.12)(react-dom@19.1.0)(react@19.1.0)
       '@radix-ui/react-use-controllable-state': 1.2.2(@types/react@19.0.12)(react@19.1.0)
@@ -2522,7 +2522,7 @@ packages:
     resolution: {integrity: sha512-vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==}
     dev: true
 
-  /@turbo/gen@2.5.1(@types/node@22.14.1)(typescript@5.8.3):
+  /@turbo/gen@2.5.1(@types/node@22.15.0)(typescript@5.8.3):
     resolution: {integrity: sha512-d6fSO1bhSVwUVHBMoDFbyorPiKt8pz3X4OS7c+GDL+D5CPJ21dTFvwdLdEgPe7iUnyARY1Nf5ZnP/v47bZlvvw==}
     hasBin: true
     dependencies:
@@ -2534,7 +2534,7 @@ packages:
       node-plop: 0.26.3
       picocolors: 1.0.1
       proxy-agent: 6.5.0
-      ts-node: 10.9.2(@types/node@22.14.1)(typescript@5.8.3)
+      ts-node: 10.9.2(@types/node@22.15.0)(typescript@5.8.3)
       update-check: 1.5.4
       validate-npm-package-name: 5.0.1
     transitivePeerDependencies:
@@ -2634,6 +2634,12 @@ packages:
 
   /@types/node@22.14.1:
     resolution: {integrity: sha512-u0HuPQwe/dHrItgHHpmw3N2fYCR6x4ivMNbPHRkBVP4CvN+kiRrKHWk3i8tXiO/joPwXLMYvF9TTF0eqgHIuOw==}
+    dependencies:
+      undici-types: 6.21.0
+    dev: true
+
+  /@types/node@22.15.0:
+    resolution: {integrity: sha512-99S8dWD2DkeE6PBaEDw+In3aar7hdoBvjyJMR6vaKBTzpvR0P00ClzJMOoVrj9D2+Sy/YCwACYHnBTpMhg1UCA==}
     dependencies:
       undici-types: 6.21.0
     dev: true
@@ -5166,7 +5172,7 @@ packages:
     engines: {node: '>=6'}
     dev: false
 
-  /ts-node@10.9.2(@types/node@22.14.1)(typescript@5.8.3):
+  /ts-node@10.9.2(@types/node@22.15.0)(typescript@5.8.3):
     resolution: {integrity: sha512-f0FFpIdcHgn8zcPSbf1dRevwt047YMnaiJM3u2w2RewrB+fob/zePZcrOyQoLMMO7aBIddLcQIEK5dYjkLnGrQ==}
     hasBin: true
     peerDependencies:
@@ -5185,7 +5191,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
-      '@types/node': 22.14.1
+      '@types/node': 22.15.0
       acorn: 8.14.1
       acorn-walk: 8.3.4
       arg: 4.1.3
