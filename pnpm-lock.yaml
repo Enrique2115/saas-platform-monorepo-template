@@ -13,7 +13,7 @@ importers:
         version: 1.9.4
       '@turbo/gen':
         specifier: ^2.5.1
-        version: 2.5.1(@types/node@22.14.1)(typescript@5.8.3)
+        version: 2.5.1(@types/node@22.15.0)(typescript@5.8.3)
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -181,7 +181,7 @@ importers:
     dependencies:
       '@hookform/resolvers':
         specifier: ^4.1.3
-        version: 4.1.3(react-hook-form@7.55.0)
+        version: 4.1.3(react-hook-form@7.56.1)
       '@radix-ui/react-accordion':
         specifier: ^1.2.4
         version: 1.2.4(@types/react@19.0.12)(react-dom@19.1.0)(react@19.1.0)
@@ -294,8 +294,8 @@ importers:
         specifier: 8.10.1
         version: 8.10.1(date-fns@4.1.0)(react@19.1.0)
       react-hook-form:
-        specifier: ^7.55.0
-        version: 7.55.0(react@19.1.0)
+        specifier: ^7.56.1
+        version: 7.56.1(react@19.1.0)
       react-resizable-panels:
         specifier: ^2.1.7
         version: 2.1.7(react-dom@19.1.0)(react@19.1.0)
@@ -500,13 +500,13 @@ packages:
     resolution: {integrity: sha512-MDWhGtE+eHw5JW7lq4qhc5yRLS11ERl1c7Z6Xd0a58DozHES6EnNNwUWbMiG4J9Cgj053Bhk8zvlhFYKVhULwg==}
     dev: false
 
-  /@hookform/resolvers@4.1.3(react-hook-form@7.55.0):
+  /@hookform/resolvers@4.1.3(react-hook-form@7.56.1):
     resolution: {integrity: sha512-Jsv6UOWYTrEFJ/01ZrnwVXs7KDvP8XIo115i++5PWvNkNvkrsTfGiLS6w+eJ57CYtUtDQalUWovCZDHFJ8u1VQ==}
     peerDependencies:
       react-hook-form: ^7.0.0
     dependencies:
       '@standard-schema/utils': 0.3.0
-      react-hook-form: 7.55.0(react@19.1.0)
+      react-hook-form: 7.56.1(react@19.1.0)
     dev: false
 
   /@img/sharp-darwin-arm64@0.34.1:
@@ -2522,7 +2522,7 @@ packages:
     resolution: {integrity: sha512-vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==}
     dev: true
 
-  /@turbo/gen@2.5.1(@types/node@22.14.1)(typescript@5.8.3):
+  /@turbo/gen@2.5.1(@types/node@22.15.0)(typescript@5.8.3):
     resolution: {integrity: sha512-d6fSO1bhSVwUVHBMoDFbyorPiKt8pz3X4OS7c+GDL+D5CPJ21dTFvwdLdEgPe7iUnyARY1Nf5ZnP/v47bZlvvw==}
     hasBin: true
     dependencies:
@@ -2534,7 +2534,7 @@ packages:
       node-plop: 0.26.3
       picocolors: 1.0.1
       proxy-agent: 6.5.0
-      ts-node: 10.9.2(@types/node@22.14.1)(typescript@5.8.3)
+      ts-node: 10.9.2(@types/node@22.15.0)(typescript@5.8.3)
       update-check: 1.5.4
       validate-npm-package-name: 5.0.1
     transitivePeerDependencies:
@@ -2634,6 +2634,12 @@ packages:
 
   /@types/node@22.14.1:
     resolution: {integrity: sha512-u0HuPQwe/dHrItgHHpmw3N2fYCR6x4ivMNbPHRkBVP4CvN+kiRrKHWk3i8tXiO/joPwXLMYvF9TTF0eqgHIuOw==}
+    dependencies:
+      undici-types: 6.21.0
+    dev: true
+
+  /@types/node@22.15.0:
+    resolution: {integrity: sha512-99S8dWD2DkeE6PBaEDw+In3aar7hdoBvjyJMR6vaKBTzpvR0P00ClzJMOoVrj9D2+Sy/YCwACYHnBTpMhg1UCA==}
     dependencies:
       undici-types: 6.21.0
     dev: true
@@ -4574,8 +4580,8 @@ packages:
       react: 19.1.0
       scheduler: 0.26.0
 
-  /react-hook-form@7.55.0(react@19.1.0):
-    resolution: {integrity: sha512-XRnjsH3GVMQz1moZTW53MxfoWN7aDpUg/GpVNc4A3eXRVNdGXfbzJ4vM4aLQ8g6XCUh1nIbx70aaNCl7kxnjog==}
+  /react-hook-form@7.56.1(react@19.1.0):
+    resolution: {integrity: sha512-qWAVokhSpshhcEuQDSANHx3jiAEFzu2HAaaQIzi/r9FNPm1ioAvuJSD4EuZzWd7Al7nTRKcKPnBKO7sRn+zavQ==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       react: ^16.8.0 || ^17 || ^18 || ^19
@@ -5166,7 +5172,7 @@ packages:
     engines: {node: '>=6'}
     dev: false
 
-  /ts-node@10.9.2(@types/node@22.14.1)(typescript@5.8.3):
+  /ts-node@10.9.2(@types/node@22.15.0)(typescript@5.8.3):
     resolution: {integrity: sha512-f0FFpIdcHgn8zcPSbf1dRevwt047YMnaiJM3u2w2RewrB+fob/zePZcrOyQoLMMO7aBIddLcQIEK5dYjkLnGrQ==}
     hasBin: true
     peerDependencies:
@@ -5185,7 +5191,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
-      '@types/node': 22.14.1
+      '@types/node': 22.15.0
       acorn: 8.14.1
       acorn-walk: 8.3.4
       arg: 4.1.3
