@@ -128,8 +128,8 @@ importers:
         specifier: ^15.3.1
         version: 15.3.1
       '@t3-oss/env-core':
-        specifier: ^0.12.0
-        version: 0.12.0(typescript@5.8.3)(zod@3.24.3)
+        specifier: ^0.13.0
+        version: 0.13.0(arktype@2.1.20)(typescript@5.8.3)(zod@3.24.3)
       '@t3-oss/env-nextjs':
         specifier: ^0.12.0
         version: 0.12.0(typescript@5.8.3)(zod@3.24.3)
@@ -349,6 +349,16 @@ packages:
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
     engines: {node: '>=10'}
     dev: true
+
+  /@ark/schema@0.46.0:
+    resolution: {integrity: sha512-c2UQdKgP2eqqDArfBqQIJppxJHvNNXuQPeuSPlDML4rjw+f1cu0qAlzOG4b8ujgm9ctIDWwhpyw6gjG5ledIVQ==}
+    dependencies:
+      '@ark/util': 0.46.0
+    dev: false
+
+  /@ark/util@0.46.0:
+    resolution: {integrity: sha512-JPy/NGWn/lvf1WmGCPw2VGpBg5utZraE84I7wli18EDF3p3zc/e9WolT35tINeZO3l7C77SjqRJeAUoT0CvMRg==}
+    dev: false
 
   /@babel/runtime-corejs3@7.27.0:
     resolution: {integrity: sha512-UWjX6t+v+0ckwZ50Y5ShZLnlk95pP5MyW/pon9tiYzl3+18pkTHTFNTKr7rQbfRXPkowt2QAn30o1b6oswszew==}
@@ -2320,6 +2330,26 @@ packages:
       zod: 3.24.3
     dev: false
 
+  /@t3-oss/env-core@0.13.0(arktype@2.1.20)(typescript@5.8.3)(zod@3.24.3):
+    resolution: {integrity: sha512-bV7LAvwoeyigLXyjBnlgbKb8S9l+E29uSzWtU1GJYuKMQ6qF9dvFbjakkgoxR+tXFoxg7aGbg8DdEfwNihvF8Q==}
+    peerDependencies:
+      arktype: ^2.1.0
+      typescript: '>=5.0.0'
+      valibot: ^1.0.0-beta.7 || ^1.0.0
+      zod: ^3.24.0 || ^4.0.0-beta.0
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+      valibot:
+        optional: true
+      zod:
+        optional: true
+    dependencies:
+      arktype: 2.1.20
+      typescript: 5.8.3
+      zod: 3.24.3
+    dev: false
+
   /@t3-oss/env-nextjs@0.12.0(typescript@5.8.3)(zod@3.24.3):
     resolution: {integrity: sha512-rFnvYk1049RnNVUPvY8iQ55AuQh1Rr+qZzQBh3t++RttCGK4COpXGNxS4+45afuQq02lu+QAOy/5955aU8hRKw==}
     peerDependencies:
@@ -2644,6 +2674,12 @@ packages:
       undici-types: 6.21.0
     dev: true
 
+  /@types/node@22.15.0:
+    resolution: {integrity: sha512-99S8dWD2DkeE6PBaEDw+In3aar7hdoBvjyJMR6vaKBTzpvR0P00ClzJMOoVrj9D2+Sy/YCwACYHnBTpMhg1UCA==}
+    dependencies:
+      undici-types: 6.21.0
+    dev: true
+
   /@types/react-dom@19.0.4(@types/react@19.0.12):
     resolution: {integrity: sha512-4fSQ8vWFkg+TGhePfUzVmat3eC14TXYSsiiDSLI0dVLsrm9gZFABjPy/Qu6TKgl1tq1Bu1yDsuQgY3A3DOjCcg==}
     peerDependencies:
@@ -2761,6 +2797,13 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       tslib: 2.8.1
+    dev: false
+
+  /arktype@2.1.20:
+    resolution: {integrity: sha512-IZCEEXaJ8g+Ijd59WtSYwtjnqXiwM8sWQ5EjGamcto7+HVN9eK0C4p0zDlCuAwWhpqr6fIBkxPuYDl4/Mcj/+Q==}
+    dependencies:
+      '@ark/schema': 0.46.0
+      '@ark/util': 0.46.0
     dev: false
 
   /array-union@2.1.0:
