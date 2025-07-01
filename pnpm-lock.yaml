@@ -58,8 +58,8 @@ importers:
         specifier: ^19.1.2
         version: 19.1.8
       '@types/react-dom':
-        specifier: ^19.1.2
-        version: 19.1.2(@types/react@19.1.8)
+        specifier: ^19.1.6
+        version: 19.1.6(@types/react@19.1.8)
       autoprefixer:
         specifier: ^10.4.21
         version: 10.4.21(postcss@8.5.3)
@@ -113,8 +113,8 @@ importers:
         specifier: ^19.1.2
         version: 19.1.8
       '@types/react-dom':
-        specifier: ^19.1.2
-        version: 19.1.2(@types/react@19.1.8)
+        specifier: ^19.1.6
+        version: 19.1.6(@types/react@19.1.8)
       tailwindcss:
         specifier: ^4.1.4
         version: 4.1.11
@@ -169,8 +169,8 @@ importers:
         specifier: ^19.1.2
         version: 19.1.8
       '@types/react-dom':
-        specifier: ^19.1.2
-        version: 19.1.2(@types/react@19.1.8)
+        specifier: ^19.1.6
+        version: 19.1.6(@types/react@19.1.8)
       next:
         specifier: ^15.3.1
         version: 15.3.1(react-dom@19.1.0)(react@19.1.0)
@@ -2404,8 +2404,8 @@ packages:
       undici-types: 6.21.0
     dev: true
 
-  /@types/react-dom@19.1.2(@types/react@19.1.8):
-    resolution: {integrity: sha512-XGJkWF41Qq305SKWEILa1O8vzhb3aOo3ogBlSmiqNko/WmRb6QIaweuZCXjKygVDXpzXb5wyxKTSOsmkuqj+Qw==}
+  /@types/react-dom@19.1.6(@types/react@19.1.8):
+    resolution: {integrity: sha512-4hOiT/dwO8Ko0gV1m/TJZYk3y0KBnY9vzDh7W+DH17b2HFSOGgdj33dhihPeuy3l0q23+4e+hoXHV6hCC4dCXw==}
     peerDependencies:
       '@types/react': ^19.0.0
     dependencies:
