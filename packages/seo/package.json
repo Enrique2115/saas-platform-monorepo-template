@@ -12,7 +12,7 @@
     "@types/node": "^22.15.0",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.6",
-    "next": "^15.3.1"
+    "next": "^15.3.4"
   },
   "dependencies": {
     "lodash.merge": "^4.6.2",
