@@ -20,7 +20,7 @@
     "@repo/typescript-config": "workspace:*",
     "@tailwindcss/postcss": "^4.1.4",
     "@types/react": "^19.1.2",
-    "@types/node": "^22.15.0",
+    "@types/node": "^24.0.10",
     "@types/react-dom": "^19.1.6",
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.3",
