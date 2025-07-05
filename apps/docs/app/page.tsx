@@ -1,4 +1,4 @@
-import { Card } from "@repo/ui/atoms/card";
+import { Card } from "@repo/ui/ui/card";
 import Image from "next/image";
 import Link from "next/link";
 
