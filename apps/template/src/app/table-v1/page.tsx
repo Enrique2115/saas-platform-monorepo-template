@@ -236,7 +236,7 @@ const columns: ColumnDef<Project>[] = [
   },
 ];
 
-export function DataTableExample() {
+export default function DataTableExample() {
   const [activeTab, setActiveTab] = React.useState("all");
 
   // Filter data based on active tab
@@ -313,5 +313,3 @@ export function DataTableExample() {
     </div>
   );
 }
-
-export default DataTableExample;
