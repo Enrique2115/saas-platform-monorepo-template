@@ -191,30 +191,33 @@ function DataTable<TData, TValue>({
 
   const pageSize = pageSizeOptions[1] ?? 20;
 
+  // Render table header - reusable component
+  const renderTableHeader = () => (
+    <TableHeader className={cn("bg-table-headerBackground", headerClassName)}>
+      {table.getHeaderGroups().map((headerGroup) => (
+        <TableRow key={headerGroup.id}>
+          {headerGroup.headers.map((header) => (
+            <TableHead
+              key={header.id}
+              className="h-[34px] font-normal text-gray-500 text-xs uppercase"
+            >
+              {header.isPlaceholder
+                ? null
+                : flexRender(
+                    header.column.columnDef.header,
+                    header.getContext()
+                  )}
+            </TableHead>
+          ))}
+        </TableRow>
+      ))}
+    </TableHeader>
+  );
+
   if (loading) {
     return (
       <Table className={cn("min-w-full", tableClassName)}>
-        <TableHeader
-          className={cn("bg-table-headerBackground", headerClassName)}
-        >
-          {table.getHeaderGroups().map((headerGroup) => (
-            <TableRow key={headerGroup.id}>
-              {headerGroup.headers.map((header) => (
-                <TableHead
-                  key={header.id}
-                  className="h-[34px] font-normal text-gray-500 text-xs uppercase"
-                >
-                  {header.isPlaceholder
-                    ? null
-                    : flexRender(
-                        header.column.columnDef.header,
-                        header.getContext()
-                      )}
-                </TableHead>
-              ))}
-            </TableRow>
-          ))}
-        </TableHeader>
+        {renderTableHeader()}
         <TableBody>
           {Array.from({ length: pageSize }).map((_) => (
             <TableRow key={`loading-row-${crypto.randomUUID()}`} tabIndex={-1}>
@@ -264,27 +267,7 @@ function DataTable<TData, TValue>({
       <div className="relative overflow-hidden rounded-md border">
         <div className="overflow-x-auto">
           <Table className={cn("min-w-full", tableClassName)}>
-            <TableHeader
-              className={cn("bg-table-headerBackground", headerClassName)}
-            >
-              {table.getHeaderGroups().map((headerGroup) => (
-                <TableRow key={headerGroup.id}>
-                  {headerGroup.headers.map((header) => (
-                    <TableHead
-                      key={header.id}
-                      className="h-[34px] font-normal text-gray-500 text-xs uppercase"
-                    >
-                      {header.isPlaceholder
-                        ? null
-                        : flexRender(
-                            header.column.columnDef.header,
-                            header.getContext()
-                          )}
-                    </TableHead>
-                  ))}
-                </TableRow>
-              ))}
-            </TableHeader>
+            {renderTableHeader()}
             <TableBody>
               {table.getRowModel().rows?.length ? (
                 table.getRowModel().rows.map((row) => (
