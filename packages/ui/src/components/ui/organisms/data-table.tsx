@@ -19,6 +19,7 @@ import { DataCell } from "@repo/ui/src/components/ui/atoms/data-cell";
 import {
   Table,
   TableBody,
+  TableCell,
   TableHead,
   TableHeader,
   TableRow,
@@ -30,6 +31,7 @@ import {
 import { TablePagination } from "@repo/ui/src/components/ui/molecules/table-pagination";
 import { TableSearchBar } from "@repo/ui/src/components/ui/molecules/table-search-bar";
 import { cn } from "@repo/ui/src/lib/utils";
+import { Skeleton } from "../atoms/skeleton";
 
 export interface TableConfig {
   enableSorting?: boolean;
@@ -75,7 +77,6 @@ export interface TablePaginationConfig {
 
 export interface TableMessages {
   emptyMessage?: string;
-  loadingMessage?: string;
 }
 
 export interface DataTableProps<TData, TValue> {
@@ -148,8 +149,7 @@ function DataTable<TData, TValue>({
   } = pagination;
 
   // Extract messages with defaults
-  const { emptyMessage = "No results found.", loadingMessage = "Loading..." } =
-    messages;
+  const { emptyMessage = "No results found." } = messages;
   const [sorting, setSorting] = React.useState<SortingState>(initialSorting);
   const [columnFilters, setColumnFilters] =
     React.useState<ColumnFiltersState>(initialFilters);
@@ -189,17 +189,48 @@ function DataTable<TData, TValue>({
     },
   });
 
+  const pageSize = pageSizeOptions[1] ?? 20;
+
   if (loading) {
     return (
-      <TableRow>
-        <DataCell
-          colSpan={columns.length}
-          className="h-24 text-center"
-          align="center"
+      <Table className={cn("min-w-full", tableClassName)}>
+        <TableHeader
+          className={cn("bg-table-headerBackground", headerClassName)}
         >
-          {loadingMessage}
-        </DataCell>
-      </TableRow>
+          {table.getHeaderGroups().map((headerGroup) => (
+            <TableRow key={headerGroup.id}>
+              {headerGroup.headers.map((header) => (
+                <TableHead
+                  key={header.id}
+                  className="h-[34px] font-normal text-gray-500 text-xs uppercase"
+                >
+                  {header.isPlaceholder
+                    ? null
+                    : flexRender(
+                        header.column.columnDef.header,
+                        header.getContext()
+                      )}
+                </TableHead>
+              ))}
+            </TableRow>
+          ))}
+        </TableHeader>
+        <TableBody>
+          {Array.from({ length: pageSize }).map((_) => (
+            <TableRow key={`loading-row-${crypto.randomUUID()}`} tabIndex={-1}>
+              {Array.from({ length: columns.length }).map((_) => (
+                <TableCell
+                  key={`skeleton-cell-${crypto.randomUUID()}`}
+                  className="max-w-0 truncate px-4 py-2 text-left"
+                  tabIndex={-1}
+                >
+                  <Skeleton className="h-6 w-full" />
+                </TableCell>
+              ))}
+            </TableRow>
+          ))}
+        </TableBody>
+      </Table>
     );
   }
 
