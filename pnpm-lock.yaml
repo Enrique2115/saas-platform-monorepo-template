@@ -86,7 +86,7 @@ importers:
         version: link:../../packages/seo
       '@t3-oss/env-nextjs':
         specifier: ^0.13.8
-        version: 0.13.8(typescript@5.8.3)(zod@3.25.67)
+        version: 0.13.8(typescript@5.8.3)(zod@3.25.75)
       '@tanstack/react-table':
         specifier: ^8.20.5
         version: 8.21.3(react-dom@19.1.0)(react@19.1.0)
@@ -266,8 +266,8 @@ importers:
         specifier: ^1.1.2
         version: 1.1.2(@types/react@19.1.8)(react-dom@19.1.0)(react@19.1.0)
       zod:
-        specifier: ^3.24.3
-        version: 3.25.67
+        specifier: ^3.25.75
+        version: 3.25.75
     devDependencies:
       '@repo/typescript-config':
         specifier: workspace:*
@@ -301,13 +301,13 @@ importers:
         version: 15.3.5
       '@t3-oss/env-core':
         specifier: ^0.13.0
-        version: 0.13.8(typescript@5.8.3)(zod@3.25.67)
+        version: 0.13.8(typescript@5.8.3)(zod@3.25.75)
       '@t3-oss/env-nextjs':
         specifier: ^0.13.8
-        version: 0.13.8(typescript@5.8.3)(zod@3.25.67)
+        version: 0.13.8(typescript@5.8.3)(zod@3.25.75)
       zod:
-        specifier: ^3.24.3
-        version: 3.25.67
+        specifier: ^3.25.75
+        version: 3.25.75
     devDependencies:
       '@repo/typescript-config':
         specifier: workspace:*
@@ -479,8 +479,8 @@ packages:
     engines: {node: '>=10.0.0'}
     dev: false
 
-  /@emnapi/runtime@1.4.3:
-    resolution: {integrity: sha512-pBPWdu6MLKROBX05wSNKcNb++m5Er+KQ9QkB+WVM+pW2Kx9hoSrVTnu3BdkI5eBLZoKu/J6mW/B6i6bJB2ytXQ==}
+  /@emnapi/runtime@1.4.4:
+    resolution: {integrity: sha512-hHyapA4A3gPaDCNfiqyZUStTMqIkKRshqPIuDOXv1hcBnD4U3l8cP0T1HMCfGRxQ6V64TGCcoswChANyOAwbQg==}
     requiresBuild: true
     dependencies:
       tslib: 2.8.1
@@ -672,7 +672,7 @@ packages:
     cpu: [wasm32]
     requiresBuild: true
     dependencies:
-      '@emnapi/runtime': 1.4.3
+      '@emnapi/runtime': 1.4.4
     optional: true
 
   /@img/sharp-win32-arm64@0.34.2:
@@ -1973,7 +1973,7 @@ packages:
     dependencies:
       tslib: 2.8.1
 
-  /@t3-oss/env-core@0.13.8(typescript@5.8.3)(zod@3.25.67):
+  /@t3-oss/env-core@0.13.8(typescript@5.8.3)(zod@3.25.75):
     resolution: {integrity: sha512-L1inmpzLQyYu4+Q1DyrXsGJYCXbtXjC4cICw1uAKv0ppYPQv656lhZPU91Qd1VS6SO/bou1/q5ufVzBGbNsUpw==}
     peerDependencies:
       arktype: ^2.1.0
@@ -1991,10 +1991,10 @@ packages:
         optional: true
     dependencies:
       typescript: 5.8.3
-      zod: 3.25.67
+      zod: 3.25.75
     dev: false
 
-  /@t3-oss/env-nextjs@0.13.8(typescript@5.8.3)(zod@3.25.67):
+  /@t3-oss/env-nextjs@0.13.8(typescript@5.8.3)(zod@3.25.75):
     resolution: {integrity: sha512-QmTLnsdQJ8BiQad2W2nvV6oUpH4oMZMqnFEjhVpzU0h3sI9hn8zb8crjWJ1Amq453mGZs6A4v4ihIeBFDOrLeQ==}
     peerDependencies:
       arktype: ^2.1.0
@@ -2011,9 +2011,9 @@ packages:
       zod:
         optional: true
     dependencies:
-      '@t3-oss/env-core': 0.13.8(typescript@5.8.3)(zod@3.25.67)
+      '@t3-oss/env-core': 0.13.8(typescript@5.8.3)(zod@3.25.75)
       typescript: 5.8.3
-      zod: 3.25.67
+      zod: 3.25.75
     dev: false
 
   /@tailwindcss/node@4.1.11:
@@ -5125,6 +5125,6 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /zod@3.25.67:
-    resolution: {integrity: sha512-idA2YXwpCdqUSKRCACDE6ItZD9TZzy3OZMtpfLoh6oPR47lipysRrJfjzMqFxQ3uJuUPyUeWe1r9vLH33xO/Qw==}
+  /zod@3.25.75:
+    resolution: {integrity: sha512-OhpzAmVzabPOL6C3A3gpAifqr9MqihV/Msx3gor2b2kviCgcb+HM9SEOpMWwwNp9MRunWnhtAKUoo0AHhjyPPg==}
     dev: false
