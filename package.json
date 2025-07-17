@@ -13,7 +13,7 @@
     "generate": "turbo gen run init"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.9.4",
+    "@biomejs/biome": "2.1.1",
     "@turbo/gen": "^2.5.5",
     "husky": "^9.1.7",
     "lint-staged": "^16.1.2",
